@@ -3,7 +3,6 @@ const fs =require('fs')
 const path=require('path')
 const { Schema } = mongoose;
 
-
     const detailSchema = new Schema({
         userId:{type:Number,required:true},
         id:{type:Number,required:true},
