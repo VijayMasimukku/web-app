@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            height:100vh;
+            border:1px solid black;
+            
+        }
+        .form{
+            border:1px solid black;
+            background-color: aqua;
+        }
+        .input{
+            margin:15px;
+            height: 30px;
+        }
+        input,a,button{
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        
+        <div class="form">
+            <h1>Registation form</h1>
+            <form action="/register" method="POST" >
+                <div class="input">
+                    <lable for="name">Name</lable><input type="text" id="name" name="name" required>
+                </div>
+                <div class="input">
+                    <lable for="email">Email</lable><input type="email" id="email" name="email" required>
+                </div>
+                <div class="input">
+                    <lable for="password">Password</lable><input type="password" id="password" name="password" required>
+                </div>
+            
+                <button type="submit">Register</button>
+                
+            </form>
+            <p>Existing user<a href="/login">Log in</a></p>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
